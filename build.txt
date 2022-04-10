@@ -1,0 +1,3 @@
+displayName = Sprite Anon's Suggestions
+author = pbone
+version = 0.1

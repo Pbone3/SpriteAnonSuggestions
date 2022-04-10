@@ -1,0 +1,19 @@
+﻿Mods: {
+	SpriteAnonSuggestions: {
+		ItemName: {
+			NightTerraBlade: Terra Blade
+		}
+		
+		ItemTooltip: {
+		}
+
+		ProjectileName: {
+			NightTerraBeam: Terra Beam
+		}
+
+		RecipeConditions: {
+			DayOnly: Can only be crafted during the day.
+			NightOnly: Can only be crafted during the night.
+		}
+	}
+}

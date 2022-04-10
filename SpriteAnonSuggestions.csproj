@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project Sdk="Microsoft.NET.Sdk">
+  <Import Project="..\tModLoader.targets" />
+  <PropertyGroup>
+    <AssemblyName>SpriteAnonSuggestions</AssemblyName>
+    <TargetFramework>net6.0</TargetFramework>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Content\MaterialsAndAcessories\" />
+    <Folder Include="Content\BasicWeapons\" />
+    <Folder Include="Content\BossGear\" />
+    <Folder Include="Content\Misc\" />
+    <Folder Include="Content\OtherSetsAndPotions\" />
+    <Folder Include="Content\ThrowingWeaponsAndAmmunition\" />
+  </ItemGroup>
+</Project>
