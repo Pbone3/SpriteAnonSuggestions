@@ -11,9 +11,8 @@
     <PackageReference Include="tModLoader.CodeAssist" Version="0.1.*" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Content\BasicWeapons\ZombieWeapons\Zombows\" />
     <Folder Include="Content\MaterialsAndAcessories\" />
-    <Folder Include="Content\BasicWeapons\" />
-    <Folder Include="Content\BossGear\" />
     <Folder Include="Content\Misc\" />
     <Folder Include="Content\OtherSetsAndPotions\" />
     <Folder Include="Content\ThrowingWeaponsAndAmmunition\" />

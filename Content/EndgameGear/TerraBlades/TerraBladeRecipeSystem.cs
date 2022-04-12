@@ -1,4 +1,4 @@
-﻿using SpriteAnonSuggestions.Content.EndgameGear.Items.TerraBlades;
+﻿using SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Items;
 using SpriteAnonSuggestions.Utils;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +7,7 @@ using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace SpriteAnonSuggestions.Content.EndgameGear.Systems
+namespace SpriteAnonSuggestions.Content.EndgameGear.TerraBlades
 {
     public sealed class TerraBladeRecipeSystem : ModSystem
     {

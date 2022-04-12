@@ -1,3 +1,4 @@
 displayName = Sprite Anon's Suggestions
-author = pbone
+author = Sprite Anon, pbone
 version = 0.1
+includePDB = false

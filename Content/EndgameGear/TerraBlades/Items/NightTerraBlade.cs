@@ -1,12 +1,12 @@
 ﻿using Microsoft.Xna.Framework;
-using SpriteAnonSuggestions.Content.EndgameGear.Projectiles.TerraBlades;
+using SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Projectiles;
 using SpriteAnonSuggestions.Utils;
 using Terraria;
 using Terraria.ID;
 using Terraria.Localization;
 using Terraria.ModLoader;
 
-namespace SpriteAnonSuggestions.Content.EndgameGear.Items.TerraBlades
+namespace SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Items
 {
     public sealed class NightTerraBlade : ModItem
     {

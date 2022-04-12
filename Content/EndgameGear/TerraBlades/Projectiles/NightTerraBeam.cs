@@ -7,24 +7,24 @@ using Terraria.GameContent;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SpriteAnonSuggestions.Content.EndgameGear.Projectiles.TerraBlades
+namespace SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Projectiles
 {
     // Visual variation of the vanilla green Terra Beam
-    public sealed class NightTerraBeam : ModProjectile
+    public class NightTerraBeam : ModProjectile
     {
-        public static int DustType => 71;
+        public virtual int DustType => 71;
 
-        public sealed override void SetDefaults()
+        public override void SetDefaults()
         {
             Projectile.CloneDefaults(ProjectileID.TerraBeam);
             Projectile.aiStyle = -1;
             AIType = ProjectileID.TerraBeam;
         }
 
-        public sealed override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
+        public override void OnHitNPC(NPC target, int damage, float knockback, bool crit)
         {
             // Reduce damage on hit
-            Projectile.damage = (int)((float)Projectile.damage * 0.85f);
+            Projectile.damage = (int)(Projectile.damage * 0.85f);
         }
 
         public sealed override Color? GetAlpha(Color lightColor)
@@ -48,13 +48,13 @@ namespace SpriteAnonSuggestions.Content.EndgameGear.Projectiles.TerraBlades
             Main.EntitySpriteDraw(
                 TextureAssets.Projectile[Type].Value,
                 new Vector2(
-                    Projectile.position.X - Main.screenPosition.X + (Projectile.width / 2),
-                    Projectile.position.Y - Main.screenPosition.Y + (Projectile.height / 2)),
-                
+                    Projectile.position.X - Main.screenPosition.X + Projectile.width / 2,
+                    Projectile.position.Y - Main.screenPosition.Y + Projectile.height / 2),
+
                 new Rectangle(0, 0, TextureAssets.Projectile[Type].Width(), TextureAssets.Projectile[Type].Height()),
                 Projectile.GetAlpha(lightColor), Projectile.rotation,
                 new Vector2(TextureAssets.Projectile[Type].Width(), 0f), Projectile.scale, spriteEffects, 0);
-            
+
             return false;
         }
 
@@ -122,8 +122,8 @@ namespace SpriteAnonSuggestions.Content.EndgameGear.Projectiles.TerraBlades
             float blue = Projectile.light;
 
             Lighting.AddLight(
-                (int)((Projectile.position.X + (Projectile.width / 2)) / 16f),
-                (int)((Projectile.position.Y + (Projectile.height / 2)) / 16f),
+                (int)((Projectile.position.X + Projectile.width / 2) / 16f),
+                (int)((Projectile.position.Y + Projectile.height / 2) / 16f),
                 red, green, blue);
         }
 
@@ -134,13 +134,13 @@ namespace SpriteAnonSuggestions.Content.EndgameGear.Projectiles.TerraBlades
             {
                 float offsetX = Projectile.oldVelocity.X * (30f / i);
                 float offsetY = Projectile.oldVelocity.Y * (30f / i);
-                
+
                 Dust dust = Dust.NewDustDirect(
                     new Vector2(Projectile.oldPosition.X - offsetX, Projectile.oldPosition.Y - offsetY),
                     8, 8, DustType, Projectile.oldVelocity.X, Projectile.oldVelocity.Y, 100, default, 1.8f);
                 dust.noGravity = true;
                 dust.velocity *= 0.35f;
-                
+
                 dust = Dust.NewDustDirect(
                     new Vector2(Projectile.oldPosition.X - offsetX, Projectile.oldPosition.Y - offsetY),
                     8, 8, DustType, Projectile.oldVelocity.X, Projectile.oldVelocity.Y, 100, default, 1.4f);

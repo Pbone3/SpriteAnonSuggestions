@@ -1,7 +1,14 @@
 ﻿Mods: {
 	SpriteAnonSuggestions: {
 		ItemName: {
+			FrozenZombieArm: Frozen Zombie Arm
+			BloodZombieArm: Bloody Zombie Arm
+			MushroomZombieArm: Truffled Zombie Arm
+		
+			TerraCore: Terra Core
 			NightTerraBlade: Terra Blade
+			TrueTerraBlade: True Terra Blade
+			NightTrueTerraBlade: True Terra Blade
 		}
 		
 		ItemTooltip: {
