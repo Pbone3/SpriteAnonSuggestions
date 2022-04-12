@@ -11,7 +11,7 @@ namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.ZombieArms
         public sealed override void SetDefaults()
         {
             Item.CloneDefaults(ItemID.ZombieArm);
-            Item.damage = 19;
+            Item.damage = 15;
             Item.knockBack = 3.75f;
             Item.useTime = Item.useAnimation = 28;
             Item.rare = ItemRarityID.Orange;

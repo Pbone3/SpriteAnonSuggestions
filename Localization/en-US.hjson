@@ -1,26 +1,30 @@
 ﻿Mods: {
-	SpriteAnonSuggestions: {
-		ItemName: {
-			FrozenZombieArm: Frozen Zombie Arm
-			BloodZombieArm: Bloody Zombie Arm
-			MushroomZombieArm: Truffled Zombie Arm
-		
-			TerraCore: Terra Core
-			NightTerraBlade: Terra Blade
-			TrueTerraBlade: True Terra Blade
-			NightTrueTerraBlade: True Terra Blade
-		}
-		
-		ItemTooltip: {
-		}
+    SpriteAnonSuggestions: {
+        ItemName: {
+            FrozenZombieArm: Frozen Zombie Arm
+            MushroomZombieArm: Truffled Zombie Arm	
+            BloodyZombieArm: Bloody Zombie Arm
+            Zombow: Zombow
+            FrozenZombow: Frozen Zombow
+			MushroomZombow: Truffled Zombow
+            BloodyZombow: Bloody Zombow
+        
+            TerraCore: Terra Core
+            NightTerraBlade: Terra Blade
+            TrueTerraBlade: True Terra Blade
+            NightTrueTerraBlade: True Terra Blade
+        }
+        
+        ItemTooltip: {
+        }
 
-		ProjectileName: {
-			NightTerraBeam: Terra Beam
-		}
+        ProjectileName: {
+            NightTerraBeam: Terra Beam
+        }
 
-		RecipeConditions: {
-			DayOnly: Can only be crafted during the day.
-			NightOnly: Can only be crafted during the night.
-		}
-	}
+        RecipeConditions: {
+            DayOnly: Can only be crafted during the day.
+            NightOnly: Can only be crafted during the night.
+        }
+    }
 }

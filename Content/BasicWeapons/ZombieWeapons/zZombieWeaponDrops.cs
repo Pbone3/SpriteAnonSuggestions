@@ -20,7 +20,7 @@ namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons
                     break;
 
                 case NPCID.BloodZombie:
-                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BloodZombieArm>(), 250));
+                    npcLoot.Add(ItemDropRule.Common(ModContent.ItemType<BloodyZombieArm>(), 250));
                     break;
 
                 case NPCID.ZombieMushroom:
