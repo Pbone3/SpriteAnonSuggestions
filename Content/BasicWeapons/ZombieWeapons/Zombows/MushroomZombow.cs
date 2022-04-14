@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using SpriteAnonSuggestions.Utils;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -8,6 +9,11 @@ namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows
 {
     public sealed class MushroomZombow : ModItem
     {
+        public sealed override void SetStaticDefaults()
+        {
+            this.JourneyResearchNeeded(1);
+        }
+
         public sealed override void SetDefaults()
         {
             Item.CloneDefaults(ItemID.TungstenBow);
@@ -15,6 +21,7 @@ namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows
             Item.shootSpeed = 6.6f;
             Item.width = 18;
             Item.height = 40;
+            Item.rare = ItemRarityID.Orange;
         }
 
         public sealed override bool Shoot(Player player, EntitySource_ItemUse_WithAmmo source, Vector2 position, Vector2 velocity, int type, int damage, float knockback)
@@ -26,10 +33,11 @@ namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows
             
             for (int i = 0; i < numberProjectiles; i++)
             {
-                Vector2 perturbedSpeed = velocity.RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1))) * .1f;
+                Vector2 perturbedSpeed = velocity.RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1))) * .25f;
 
-                Projectile proj = Projectile.NewProjectileDirect(source, position, perturbedSpeed, ModContent.ProjectileType<MushroomZombowSpore>(), damage / 6, knockback, player.whoAmI);
-                proj.timeLeft = 30;
+                Projectile proj = Projectile.NewProjectileDirect(source, position, perturbedSpeed, ProjectileID.TruffleSpore, damage / 5, knockback, player.whoAmI);
+                proj.aiStyle = ProjAIStyleID.Arrow;
+                proj.timeLeft = 12;
                 proj.alpha = 0;
             }
 

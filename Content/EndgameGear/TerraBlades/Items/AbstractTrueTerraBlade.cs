@@ -1,4 +1,5 @@
 ﻿using Microsoft.Xna.Framework;
+using SpriteAnonSuggestions.Utils;
 using SpriteAnonSuggestions.Content.BossGear.LunaticCultist;
 using Terraria;
 using Terraria.DataStructures;
@@ -9,6 +10,11 @@ namespace SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Items
 {
     public abstract class AbstractTrueTerraBlade : ModItem
     {
+        public sealed override void SetStaticDefaults()
+        {
+            this.JourneyResearchNeeded(1);
+        }
+
         public abstract int BaseTerraBladeType { get; }
         public abstract int ProjectileType { get; }
 

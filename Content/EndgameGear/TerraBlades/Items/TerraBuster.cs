@@ -1,5 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Projectiles;
+using SpriteAnonSuggestions.Utils;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
@@ -9,6 +10,11 @@ namespace SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Items
 {
     public sealed class TerraBuster : ModItem
     {
+        public sealed override void SetStaticDefaults()
+        {
+            this.JourneyResearchNeeded(1);
+        }
+
         public override void SetDefaults()
         {
             Item.rare = ItemRarityID.Cyan;

@@ -2,11 +2,17 @@
 using Terraria.ID;
 using Terraria;
 using Microsoft.Xna.Framework;
+using SpriteAnonSuggestions.Utils;
 
 namespace SpriteAnonSuggestions.Content.BossGear.LunaticCultist
 {
     public sealed class TerraCore : ModItem
     {
+        public sealed override void SetStaticDefaults()
+        {
+            this.JourneyResearchNeeded(1);
+        }
+
         public sealed override void SetDefaults()
         {
 			Item.width = 32;

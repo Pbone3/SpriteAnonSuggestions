@@ -10,6 +10,11 @@ namespace SpriteAnonSuggestions.Content.EndgameGear.TerraBlades.Items
 {
     public sealed class NightTerraBlade : ModItem
     {
+        public sealed override void SetStaticDefaults()
+        {
+            this.JourneyResearchNeeded(1);
+        }
+
         public sealed override void SetDefaults()
         {
             Item.CloneDefaults(ItemID.TerraBlade);
