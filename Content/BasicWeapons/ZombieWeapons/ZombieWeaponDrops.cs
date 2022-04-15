@@ -1,5 +1,4 @@
-﻿using SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.ZombieArms;
-using SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows;
+﻿using SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Items;
 using Terraria;
 using Terraria.GameContent.ItemDropRules;
 using Terraria.ID;

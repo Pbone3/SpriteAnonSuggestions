@@ -10,9 +10,18 @@
             BloodyZombow: Bloody Zombow
         
             TerraCore: Terra Core
+
+            MagnifyingGlass: Magnifying Glass
+
             NightTerraBlade: Terra Blade
             TrueTerraBlade: True Terra Blade
             NightTrueTerraBlade: True Terra Blade
+
+            PaintGrenade: Paint Grenade
+            PaintBullet: Paint Bullet
+
+            BottomlessHealingPotion: Bottomless Healing Potion
+            BottomlessManaPotion: Bottomless Mana Potion
         }
         
         ItemTooltip: {

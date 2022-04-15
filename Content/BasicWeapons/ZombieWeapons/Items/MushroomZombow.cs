@@ -5,7 +5,7 @@ using Terraria.DataStructures;
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows
+namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Items
 {
     public sealed class MushroomZombow : ModItem
     {
@@ -30,7 +30,7 @@ namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows
             float numberProjectiles = 4;
             float rotation = MathHelper.ToRadians(60);
             position += Vector2.Normalize(velocity) * 15f;
-            
+
             for (int i = 0; i < numberProjectiles; i++)
             {
                 Vector2 perturbedSpeed = velocity.RotatedBy(MathHelper.Lerp(-rotation, rotation, i / (numberProjectiles - 1))) * .25f;

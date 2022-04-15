@@ -2,7 +2,7 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.ZombieArms
+namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Items
 {
     public sealed class FrozenZombieArm : ModItem
     {

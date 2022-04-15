@@ -2,9 +2,9 @@
 using Terraria.ID;
 using Terraria.ModLoader;
 
-namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows
+namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Items
 {
-    public sealed class BloodyZombow : ModItem
+    public sealed class Zombow : ModItem
     {
         public sealed override void SetStaticDefaults()
         {
@@ -14,11 +14,10 @@ namespace SpriteAnonSuggestions.Content.BasicWeapons.ZombieWeapons.Zombows
         public sealed override void SetDefaults()
         {
             Item.CloneDefaults(ItemID.TungstenBow);
-            Item.damage = 13;
-            Item.shootSpeed = 6.75f;
-            Item.width = 20;
-            Item.height = 44;
-            Item.rare = ItemRarityID.Orange;
+            Item.shootSpeed = 6.5f;
+            Item.width = 18;
+            Item.height = 40;
+            Item.rare = ItemRarityID.White;
         }
     }
 }

@@ -2,7 +2,7 @@ using Terraria.ModLoader;
 
 namespace SpriteAnonSuggestions
 {
-	public class SpriteAnonSuggestions : Mod
-	{
-	}
+    public class SpriteAnonSuggestions : Mod
+    {
+    }
 }

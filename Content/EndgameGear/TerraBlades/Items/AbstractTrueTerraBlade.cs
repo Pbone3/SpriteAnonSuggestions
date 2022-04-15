@@ -1,6 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
-using SpriteAnonSuggestions.Utils;
 using SpriteAnonSuggestions.Content.BossGear.LunaticCultist;
+using SpriteAnonSuggestions.Utils;
 using Terraria;
 using Terraria.DataStructures;
 using Terraria.ID;
