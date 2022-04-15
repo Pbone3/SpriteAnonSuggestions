@@ -20,15 +20,19 @@
             PaintGrenade: Paint Grenade
             PaintBullet: Paint Bullet
 
+            JumpingPotion: Jumping Potion
+
             BottomlessHealingPotion: Bottomless Healing Potion
             BottomlessManaPotion: Bottomless Mana Potion
         }
         
         ItemTooltip: {
+            JumpingPotion: Increases jump speed and fall resistance
         }
 
         ProjectileName: {
             NightTerraBeam: Terra Beam
+            GaiaBeam: Gaia Beam
         }
 
         RecipeConditions: {

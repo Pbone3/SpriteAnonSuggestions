@@ -21,7 +21,7 @@ namespace SpriteAnonSuggestions.Utils.DynamicItemDrawing.Pieces
         public override void DrawInWorld(Item item, SpriteBatch spriteBatch, Color lightColor, Color alphaColor, ref float rotation, ref float scale, int whoAmI)
         {
             Rectangle? frame = null;
-            Vector2? origin = Vector2.Zero;
+            Vector2? origin = Texture.Size() * 0.5f;
 
             if (Main.itemAnimations[item.type] != null)
             {

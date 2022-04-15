@@ -8,7 +8,7 @@ namespace SpriteAnonSuggestions.Utils.DynamicItemDrawing
 {
     public abstract class DynamicallyDrawnItem : ModItem
     {
-        private readonly List<ItemTexturePiece> texturePieces = new();
+        protected readonly List<ItemTexturePiece> texturePieces = new();
 
         public DynamicallyDrawnItem(params ItemTexturePiece[] pieces)
         {
